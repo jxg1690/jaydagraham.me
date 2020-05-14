@@ -1,0 +1,184 @@
+
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: rgb(255, 0, 123);
+
+  background-image: url("stripes.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+  background-attachment: fixed;
+  /*  credit: https://www.vectorstock.com/royalty-free-vector/tile-black-and-white-stripes-pattern-vector-17198809;*/
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255);
+  padding: 16px;
+
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 16px;
+  grid-template-areas:
+    "header header"
+    "nav    main"
+    "footer footer";
+}
+
+a,
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'sans-serif', cursive;
+  letter-spacing: 1px;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  background: rgb(255, 0, 123);
+  color: rgb(237, 138, 186);
+  padding: 16px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background: rgb(255,255,255);
+  color: rgb(237, 138, 186);
+  transition: all 1s ease;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+div {
+	width: 600px;
+	padding: 20px;
+	border: 5px solid rgb(255, 0, 123);
+	margin: 30px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a:hover{
+  background-color: rgb(255, 0, 123);
+}
+
+
+
+#resume section > p {
+  width: 930px;
+}
+
+#resume section > ul {
+  width: 960px;
+}
+#resume section {
+  margin-bottom: 100px;
+  color: rgb(169,169,169);
+}
+
+#resume article {
+  margin-bottom: 100px;
+}
+
+#resume main a:hover{
+  background-color:rgb(255, 0, 123);
+}
+
+#bio a:hover {
+  background: rgb(255,255,255);
+  color: rgb(237, 138, 186);
+  transition: all 1s ease;
+}
+
+
+.right {
+  float: right;
+  margin-left: 16px;
+}
+
+.left {
+  float: right;
+  margin-left: 16px;
+}
+
+.ul {
+  list-style: none;
+  padding-left: 0;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+li > span {
+  width: 100px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  background-color: rgb(237, 138, 186);
+  width: 960px;
+  align-items: baseline;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "contact call email telegram more";
+}
+
+footer > ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+  text-align: center;
+}
+
+footer > ul > li{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer ul {
+  padding-left: 0;
+  color: rgb(237, 138, 186);
+}
